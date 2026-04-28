@@ -15,6 +15,32 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Neurodo | Master Your Time, Ignite Your Potential",
   description: "The unified workspace for habit tracking, task management, and deep focus. Built for consistency and growth.",
+  metadataBase: new URL("https://neurodo.me"),
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Neurodo | Master Your Time, Ignite Your Potential",
+    description: "The unified workspace for habit tracking, task management, and deep focus.",
+    url: "https://neurodo.me",
+    siteName: "Neurodo",
+    images: [
+      {
+        url: "/images/neurodo.png",
+        width: 800,
+        height: 600,
+        alt: "Neurodo Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Neurodo | Master Your Time, Ignite Your Potential",
+    description: "The unified workspace for habit tracking, task management, and deep focus.",
+    images: ["/images/neurodo.png"],
+  },
   icons: {
     icon: "/images/neurodo.png",
   }
