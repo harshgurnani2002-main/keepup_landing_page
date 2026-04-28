@@ -19,7 +19,7 @@ export default function PrivacyPolicy() {
         <div className="prose prose-invert max-w-none text-muted">
           <p className="mb-4">Last updated: {new Date().toLocaleDateString()}</p>
           <p className="mb-4">
-            KeepUp ("we", "our", or "us") respects your privacy and is committed to protecting it through our compliance with this policy.
+            Neurodo ("we", "our", or "us") respects your privacy and is committed to protecting it through our compliance with this policy.
           </p>
           <h2 className="text-2xl font-semibold mt-8 mb-4 text-foreground">1. Information We Collect</h2>
           <p className="mb-4">
@@ -27,7 +27,7 @@ export default function PrivacyPolicy() {
           </p>
           <h2 className="text-2xl font-semibold mt-8 mb-4 text-foreground">2. How We Use Your Information</h2>
           <p className="mb-4">
-            We use the information we collect to provide, maintain, and improve our services, as well as to personalize your experience within the KeepUp app.
+            We use the information we collect to provide, maintain, and improve our services, as well as to personalize your experience within the Neurodo app.
           </p>
           <h2 className="text-2xl font-semibold mt-8 mb-4 text-foreground">3. Data Security</h2>
           <p className="mb-4">
@@ -35,7 +35,7 @@ export default function PrivacyPolicy() {
           </p>
           <h2 className="text-2xl font-semibold mt-8 mb-4 text-foreground">4. Contact Us</h2>
           <p className="mb-4">
-            If you have any questions about this Privacy Policy, please contact us at support@keepup.com.
+            If you have any questions about this Privacy Policy, please contact us at support@neurodo.com.
           </p>
         </div>
       </div>

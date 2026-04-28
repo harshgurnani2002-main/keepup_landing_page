@@ -5,7 +5,7 @@ import { ArrowLeft, MessageCircleQuestion } from "lucide-react";
 
 const faqs = [
   {
-    question: "What is KeepUp?",
+    question: "What is Neurodo?",
     answer: "A productivity hub combining habits, tasks, focus timer, and an AI assistant."
   },
   {

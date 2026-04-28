@@ -13,10 +13,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "KeepUp | Master Your Time, Ignite Your Potential",
+  title: "Neurodo | Master Your Time, Ignite Your Potential",
   description: "The unified workspace for habit tracking, task management, and deep focus. Built for consistency and growth.",
   icons: {
-    icon: "/images/icon.png",
+    icon: "/images/neurodo.png",
   }
 };
 

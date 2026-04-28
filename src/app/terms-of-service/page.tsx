@@ -19,7 +19,7 @@ export default function TermsOfService() {
         <div className="prose prose-invert max-w-none text-muted">
           <p className="mb-4">Last updated: {new Date().toLocaleDateString()}</p>
           <p className="mb-4">
-            Please read these Terms of Service carefully before using the KeepUp application operated by us.
+            Please read these Terms of Service carefully before using the Neurodo application operated by us.
           </p>
           <h2 className="text-2xl font-semibold mt-8 mb-4 text-foreground">1. Acceptance of Terms</h2>
           <p className="mb-4">
@@ -27,7 +27,7 @@ export default function TermsOfService() {
           </p>
           <h2 className="text-2xl font-semibold mt-8 mb-4 text-foreground">2. Use License</h2>
           <p className="mb-4">
-            KeepUp grants you a personal, non-exclusive, non-transferable, revocable license to use the application for your personal, non-commercial purposes.
+            Neurodo grants you a personal, non-exclusive, non-transferable, revocable license to use the application for your personal, non-commercial purposes.
           </p>
           <h2 className="text-2xl font-semibold mt-8 mb-4 text-foreground">3. User Content</h2>
           <p className="mb-4">
@@ -35,7 +35,7 @@ export default function TermsOfService() {
           </p>
           <h2 className="text-2xl font-semibold mt-8 mb-4 text-foreground">4. Disclaimer</h2>
           <p className="mb-4">
-            The materials within the KeepUp app are provided on an 'as is' basis. KeepUp makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.
+            The materials within the Neurodo app are provided on an 'as is' basis. Neurodo makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.
           </p>
         </div>
       </div>
