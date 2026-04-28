@@ -5,10 +5,10 @@ import { ArrowDown } from "lucide-react";
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-[90vh] flex flex-col items-center justify-center px-6 overflow-hidden">
+    <section className="relative min-h-[90vh] flex flex-col items-center justify-center px-6 pt-32 md:pt-20 overflow-hidden">
       {/* Dynamic Background Elements */}
-      <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-primary/10 blur-[120px] rounded-full -z-10 animate-pulse" />
-      <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-accent/5 blur-[100px] rounded-full -z-10 animate-pulse delay-700" />
+      <div className="absolute top-1/4 left-1/4 w-[300px] md:w-[500px] aspect-square bg-primary/10 blur-[80px] md:blur-[120px] rounded-full -z-10 animate-pulse" />
+      <div className="absolute bottom-1/4 right-1/4 w-[250px] md:w-[400px] aspect-square bg-accent/5 blur-[70px] md:blur-[100px] rounded-full -z-10 animate-pulse delay-700" />
       
       <div className="max-w-5xl mx-auto text-center z-10">
         <motion.div
@@ -16,14 +16,14 @@ export const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
         >
-          <span className="inline-block px-4 py-2 mb-8 text-xs font-bold tracking-[0.2em] uppercase glass rounded-full text-primary border-primary/30 shadow-lg shadow-primary/10">
+          <span className="inline-block px-4 py-2 mb-6 md:mb-8 text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase glass rounded-full text-primary border-primary/30 shadow-lg shadow-primary/10">
             Reimagining Personal Productivity
           </span>
-          <h1 className="text-6xl md:text-9xl font-black mb-10 leading-[0.9] tracking-tighter">
+          <h1 className="text-4xl sm:text-6xl md:text-9xl font-black mb-8 md:mb-10 leading-[1] md:leading-[0.9] tracking-tighter">
             One app for your <br />
             <span className="text-gradient">entire life.</span>
           </h1>
-          <p className="max-w-2xl mx-auto text-xl md:text-2xl text-muted mb-20 font-medium leading-relaxed">
+          <p className="max-w-2xl mx-auto text-lg md:text-2xl text-muted mb-12 md:mb-20 font-medium leading-relaxed px-4 md:px-0">
             Neurodo seamlessly integrates habits, tasks, and focus. <br className="hidden md:block" /> 
             Designed for those who want to achieve more by doing less.
           </p>

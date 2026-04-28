@@ -37,7 +37,7 @@ const features = [
   }
 ];
 
-const FeatureBlock = ({ title, description, setActive, index }: any) => {
+const FeatureBlock = ({ title, description, image, setActive, index }: any) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { 
     margin: "-50% 0px -50% 0px",
@@ -51,18 +51,18 @@ const FeatureBlock = ({ title, description, setActive, index }: any) => {
   }, [isInView, index, setActive]);
 
   return (
-    <div ref={ref} className="min-h-screen flex flex-col justify-center px-6 md:px-20 max-w-2xl mx-auto">
+    <div ref={ref} className="min-h-[100vh] flex flex-col justify-end lg:justify-center px-6 md:px-20 max-w-2xl mx-auto pb-24 lg:pb-0 pt-[45vh] lg:pt-0">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ margin: "-20% 0px -20% 0px" }}
-        className="space-y-6"
+        className="space-y-6 text-center lg:text-left max-lg:glass max-lg:p-8 max-lg:rounded-[2.5rem] z-10"
       >
-        <h2 className="text-4xl md:text-6xl font-black leading-tight text-foreground">
+        <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black leading-tight text-foreground">
           {title}
         </h2>
-        <p className="text-xl md:text-2xl text-muted leading-relaxed font-medium">
+        <p className="text-lg sm:text-xl lg:text-2xl text-muted leading-relaxed font-medium">
           {description}
         </p>
       </motion.div>
@@ -75,11 +75,11 @@ export const ScrollingFeatures = () => {
 
   return (
     <section className="relative w-full bg-background pt-20" id="how-it-works">
-      <div className="flex flex-col md:flex-row max-w-7xl mx-auto relative">
+      <div className="flex flex-col lg:flex-row max-w-7xl mx-auto relative">
         
-        {/* Sticky Mobile Frame */}
-        <div className="w-full md:w-1/2 sticky top-0 h-[60vh] md:h-screen flex items-center justify-center z-20 pointer-events-none">
-          <div className="relative w-[240px] md:w-[320px] aspect-[9/19.5] rounded-[2.5rem] md:rounded-[3rem] border-[10px] md:border-[12px] border-[#1e1e1e] bg-[#1e1e1e] overflow-hidden shadow-[0_0_80px_rgba(6,182,212,0.15)] ring-1 ring-white/10">
+        {/* Sticky Mobile/Desktop Frame */}
+        <div className="flex w-full lg:w-1/2 sticky top-24 lg:top-0 h-[45vh] lg:h-screen items-center justify-center z-0 lg:z-20 pointer-events-none">
+          <div className="relative w-[240px] md:w-[320px] xl:w-[350px] aspect-[9/19.5] rounded-[2.5rem] md:rounded-[3rem] xl:rounded-[3.5rem] border-[10px] md:border-[12px] xl:border-[14px] border-[#1e1e1e] bg-[#1e1e1e] overflow-hidden shadow-[0_0_80px_rgba(6,182,212,0.15)] ring-1 ring-white/10">
             {/* iPhone Notch */}
             <div className="absolute top-0 inset-x-0 h-6 md:h-7 flex justify-center z-50">
                <div className="w-24 md:w-36 h-5 md:h-6 bg-[#1e1e1e] rounded-b-2xl"></div>
@@ -107,13 +107,14 @@ export const ScrollingFeatures = () => {
         </div>
 
         {/* Scrolling Content */}
-        <div className="w-full md:w-1/2 pb-[20vh] z-10">
+        <div className="w-full lg:w-1/2 pb-10 lg:pb-[20vh] z-10">
           {features.map((feature, index) => (
             <FeatureBlock
               key={index}
               index={index}
               title={feature.title}
               description={feature.description}
+              image={feature.image}
               setActive={setActiveIndex}
             />
           ))}
